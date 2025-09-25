@@ -1,0 +1,23 @@
+:root{
+  --bg:#000000;--bg-elev:#121212;--ink:#ffffff;--muted:#b5b7ba;--brand:#EB0A1E;
+  --accent-2:#00c896;--ring:var(--brand);--radius:16px;--shadow:0 0 0 1px rgba(255,255,255,0.05),0 6px 20px rgba(0,0,0,0.35)
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif}
+h1,h2,h3,h4,h5,h6{font-family:Poppins,Inter,system-ui,sans-serif}
+.text-brand{color:var(--brand)}.bg-black{background:var(--bg)!important}.bg-elev{background:var(--bg-elev)}
+.text-muted{color:var(--muted)!important}.ls-2{letter-spacing:.08em}
+.navbar .nav-link{padding:.5rem .75rem;border-radius:.5rem}
+.navbar .nav-link:focus,.navbar .nav-link:hover{text-decoration:underline;text-decoration-color:var(--brand)}
+.pt-7{padding-top:6rem}.page-pad{padding-top:6.25rem;padding-bottom:3rem}
+.card-elev{background:var(--bg-elev);border-radius:var(--radius);border:1px solid rgba(255,255,255,.06);box-shadow:var(--shadow);transition:box-shadow .2s,border-color .2s}
+.card-elev:hover,.card-elev:focus-within{border-color:rgba(235,10,30,.7);box-shadow:0 0 0 1px rgba(235,10,30,.7),0 8px 24px rgba(0,0,0,.45)}
+.btn-brand{--bs-btn-bg:var(--brand);--bs-btn-border-color:var(--brand);--bs-btn-hover-bg:#c6091a;--bs-btn-hover-border-color:#c6091a;--bs-btn-color:#fff}
+.btn-outline-light:hover,.btn-outline-light:focus{color:#000;background:#fff}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px;border-radius:.25rem}
+.back-to-top{position:fixed;bottom:86px;right:24px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;transform:translateY(8px);z-index:1050}
+.back-to-top.show{opacity:1;pointer-events:auto;transform:none}
+.ring-glow{box-shadow:0 0 0 3px rgba(235,10,30,.55),0 0 0 6px rgba(235,10,30,.2)}.border-dark-subtle{border:1px solid rgba(255,255,255,.08)}
+.skip-link{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:.5rem 1rem;border-radius:.5rem}
+.skip-link:focus{left:.75rem;top:.75rem;z-index:2000}
+.subnav .nav .pill-link{color:var(--muted)}.subnav .nav .pill-link.active,.subnav .nav .pill-link:focus,.subnav .nav .pill-link:hover{color:#fff;background:rgba(235,10,30,.15)}
